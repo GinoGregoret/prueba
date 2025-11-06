@@ -19,10 +19,6 @@ app.use("/api/auth", authRoutes)
 // Rutas de productos
 app.use("/api/products", productRoutes)
 
-  router.get('/ruta-protegida', authenticate, (req, res) => {
-  res.json({ mensaje: 'Acceso permitido', usuario: req.user });
-});
-
 app.get('/', (req, res) => {
   res.json({ message: 'API backend funcionando. Rutas: /api/auth, /api/products' })
 })

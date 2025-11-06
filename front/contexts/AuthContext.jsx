@@ -15,7 +15,7 @@ export function AuthProvider({ children }) {
     setToken(token)
     setUser(userData)
   }
-
+  // carpeta contexts en el archivo AuthContext.jsx
   const logout = () => {
     sessionStorage.removeItem('token')
     setToken(null)
